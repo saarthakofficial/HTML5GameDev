@@ -34,5 +34,27 @@
   <footer>
     <p>&copy; Copyright 2023 Piece of InternS#it</p>
   </footer>
+  <script>
+    // Get the form element
+    var form = document.getElementById('contact-form');
+
+    // Handle form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get the form data
+      var data = new FormData(form);
+
+      // Send the form data to the server using the fetch API
+      fetch('/send-message.php', {
+        method: 'POST',
+        body: data
+      })
+      .then(function(response) {
+        // Do something with the response from the server
+        console.log(response);
+      });
+    });
+  </script>
 </body>
 </html>
