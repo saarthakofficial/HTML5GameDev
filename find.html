@@ -20,17 +20,23 @@
   </header>
   <main>
     <form>
-        <label for="search">Search:</label>
-        <input type="text" id="search" name="search">
-        <br>
-        <label for="mode-remote">Remote:</label>
-        <input type="checkbox" id="mode-remote" name="mode" value="remote">
-        <br>
-        <label for="mode-on-site">On-Site:</label>
-        <input type="checkbox" id="mode-on-site" name="mode" value="on-site">
-        <br>
-        <input type="submit" value="Filter">
-      </form>
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search">
+      <br>
+      <label for="mode-remote">Remote:</label>
+      <input type="checkbox" id="mode-remote" name="mode" value="remote">
+      <br>
+      <label for="mode-on-site">On-Site:</label>
+      <input type="checkbox" id="mode-on-site" name="mode" value="on-site">
+      <br>
+      <label for="stipend">Stipend:</label>
+      <input type="range" id="stipend" name="stipend" min="0" max="10000" step="100">
+      <br>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location">
+      <br>
+      <input type="submit" value="Filter">
+    </form>
     <h2>Find an Internship</h2>
     
     <div class="internship">
@@ -72,7 +78,9 @@
     </div>
   </main>
   <footer>
-    <p>Copyright 2021 Internship Platform</p>
+    Copyright &copy; 2023 Internship Platform
   </footer>
+  <script src="main.js"></script>
+</body>
 </body>
 </html>
